@@ -2,7 +2,9 @@ import React from 'react'
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native'
 
 export const Todo = ({todo, onRemove}) => {
-   
+    const longPressHandler = () => {
+        onRemove(todo.id)
+    }
     return(
         <TouchableOpacity activeOpacity={0.4} onPress={() => console.log('pressed',  todo.id)}>
         <View style={styles.todo}>
