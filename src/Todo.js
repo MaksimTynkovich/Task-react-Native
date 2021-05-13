@@ -8,7 +8,7 @@ export const Todo = ({todo, onRemove}) => {
     return(
         <TouchableOpacity activeOpacity={0.4} onLongPress={longPressHandler}>
         <View style={styles.todo}>
-            <Text >{todo.title}</Text>
+            <Text style={styles.text}>{todo.title}</Text>
         </View>
         </TouchableOpacity>
     )
@@ -24,4 +24,8 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginBottom: 10
     },
+    text: {
+        fontSize: '20px',
+        fontWeight: 700,
+    }
 })

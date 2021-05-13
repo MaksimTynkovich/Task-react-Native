@@ -41,6 +41,4 @@ const styles = StyleSheet.create({
         borderBottomWidth: 2,        
         textAlign: 'center',
     },
-    button: {
-    }
 })
